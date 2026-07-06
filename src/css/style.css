@@ -1,0 +1,620 @@
+*{
+  margin:0;
+  padding:0;
+}
+
+.login-container{
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:linear-gradient(
+    135deg,
+    #667eea,
+    #764ba2
+  );
+}
+
+.login-card{
+  width:400px;
+  background:white;
+  padding:40px;
+  border-radius:15px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.2);
+}
+
+.login-card h2{
+  text-align:center;
+  margin-bottom:10px;
+}
+
+.login-card p{
+  text-align:center;
+  color:gray;
+  margin-bottom:20px;
+}
+
+.form-control{
+  height:50px;
+}
+
+.btn{
+  height:50px;
+  font-size:18px;
+}
+
+/* ---------------------appsidebar */
+.nav-link:hover{
+  background-color: #f3f4f5;
+  border-radius: 5px;
+}
+/* --------------------------regiter page---------------------------- */
+.register-bg{
+min-height:100vh;
+background:linear-gradient(120deg,#667eea,#764ba2);
+display:flex;
+justify-content:center;
+align-items:center;
+}
+.register-box{
+width:600px;
+background:white;
+padding:35px;
+border-radius:18px;
+box-shadow:0 10px 30px rgba(0,0,0,0.25);
+}
+.title{
+text-align:center;
+font-weight:700;
+color:#667eea;
+margin-bottom:5px;
+}
+.subtitle{
+
+text-align:center;
+color:#777;
+margin-bottom:25px;
+}
+label{
+
+font-weight:600;
+font-size:14px;
+margin-bottom:6px;
+color:#333;
+}
+
+.form-control,
+.form-select{
+height:45px;
+border-radius:10px;
+}
+textarea.form-control{
+height:auto;
+
+}
+.form-control:focus,
+.form-select:focus{
+border-color:#667eea;
+box-shadow:0 0 8px #667eea55;
+}
+.register-button{
+width:100%;
+margin-top:25px;
+height:45px;
+border:none;
+border-radius:12px;
+background:#667eea;
+color:white;
+font-weight:600;
+font-size:17px;
+}
+.register-button:hover{
+background:#5563c1;
+}
+/* -------------------userprofile-------------------- */
+*{
+
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins,sans-serif;
+
+}
+.profile-wrapper{
+min-height:100vh;
+display:flex;
+justify-content:center;
+padding:40px;
+}
+.profile-box{
+width:950px;
+background:white;
+border-radius:25px;
+padding:35px;
+box-shadow:
+0 20px 50px rgba(0,0,0,.4);
+}
+.title{
+text-align:center;
+font-size:35px;
+margin-bottom:30px;
+color:#243b55;
+}
+.top-section{
+display:flex;
+gap:40px;
+align-items:center;
+background:
+linear-gradient(135deg,#667eea,#764ba2);
+padding:30px;
+border-radius:20px;
+color:white;
+}
+.image-box img{
+width:170px;
+height:170px;
+border-radius:50%;
+object-fit:cover;
+border:6px solid white;
+}
+.user-head h2{
+font-size:32px;
+}
+.user-head span{
+color:#00ff99;
+}
+.section{
+margin-top:30px;
+padding:25px;
+border-radius:20px;
+background:#f7f9fc;
+}
+.section h2{
+margin-bottom:20px;
+color:#243b55;
+}
+.details{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:20px;
+}
+.details div{
+background:white;
+padding:18px;
+border-radius:15px;
+box-shadow:0 5px 15px #ddd;
+}
+label{
+color:#777;
+font-size:14px;
+}
+.details p{
+font-size:18px;
+font-weight:600;
+margin-top:8px;
+}
+.security-box{
+display:flex;
+justify-content:space-between;
+gap:15px;
+}
+.security-box p{
+background:white;
+padding:20px;
+border-radius:15px;
+flex:1;
+box-shadow:0 5px 15px #ddd;
+}
+.security-box span{
+display:block;
+margin-top:10px;
+font-weight:bold;
+}
+.actions{
+margin-top:30px;
+display:flex;
+justify-content:center;
+gap:20px;
+}
+button{
+border:none;
+padding:15px 25px;
+border-radius:30px;
+font-size:16px;
+cursor:pointer;
+color:white;
+transition:.3s;
+}
+button:hover{
+transform:translateY(-5px);
+}
+.edit{
+background:#2563eb;
+}
+.pass{
+background:#8b5cf6;
+}
+.logout{
+background:#ef233c;
+}
+@media(max-width:700px){
+
+.top-section{
+flex-direction:column;
+text-align:center;
+}
+.details{
+grid-template-columns:1fr;
+}
+.security-box{
+flex-direction:column;
+}
+.actions{
+flex-direction:column;
+}
+}
+
+
+/* ----------------------------userlist------------------------------------------------- */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+
+.student-page{
+
+    min-height:100vh;
+    background:#f1f5f9;
+    padding:30px;
+
+}
+
+
+
+.header{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:25px;
+
+}
+
+
+
+.header h2{
+
+    color:#1e293b;
+    font-size:28px;
+
+}
+
+
+
+.top-right{
+
+    display:flex;
+    gap:12px;
+    align-items:center;
+
+}
+
+
+
+.top-right input{
+
+    width:260px;
+    padding:10px 15px;
+    border:1px solid #ccc;
+    border-radius:6px;
+    outline:none;
+
+}
+
+
+
+.top-right button{
+
+    padding:10px 18px;
+    border:none;
+    background:#64748b;
+    color:white;
+    border-radius:6px;
+    cursor:pointer;
+
+}
+
+
+
+.top-right button.active{
+
+    background:#2563eb;
+
+}
+
+
+
+
+/* TABLE */
+
+
+.table-box{
+
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 5px 20px rgba(0,0,0,.1);
+
+}
+
+
+
+table{
+
+    width:100%;
+    border-collapse:collapse;
+
+}
+
+
+
+thead{
+
+    background:#07182e;
+    color:white;
+
+}
+
+
+
+th{
+
+    padding:15px;
+    text-align:left;
+    font-size:14px;
+
+}
+
+
+
+td{
+
+    padding:14px;
+    border-bottom:1px solid #e5e7eb;
+    color:#334155;
+
+}
+
+
+
+tbody tr:hover{
+
+    background:#f8fafc;
+
+}
+
+
+
+
+/* BUTTONS */
+
+
+.edit-btn{
+
+    background:#2563eb;
+    color:white;
+    border:none;
+    padding:8px 15px;
+    border-radius:5px;
+    cursor:pointer;
+    margin-right:8px;
+
+}
+
+
+
+.edit-btn:hover{
+
+    background:#1d4ed8;
+
+}
+
+
+
+.delete-btn{
+
+    background:#dc2626;
+    color:white;
+    border:none;
+    padding:8px 15px;
+    border-radius:5px;
+    cursor:pointer;
+
+}
+
+
+
+.delete-btn:hover{
+
+    background:#b91c1c;
+
+}
+
+
+
+
+/* CARD VIEW */
+
+
+.card-container{
+
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+
+}
+
+
+
+.student-card{
+
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,.12);
+    transition:.3s;
+
+}
+
+
+
+.student-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+
+
+.student-card h3{
+
+    text-align:center;
+    color:#2563eb;
+    margin-bottom:20px;
+
+}
+
+
+
+.info p{
+
+    padding:8px 0;
+    border-bottom:1px solid #eee;
+    color:#334155;
+
+}
+
+
+
+.btn-group{
+
+    margin-top:20px;
+    text-align:center;
+
+}
+
+
+
+
+/* RESPONSIVE */
+
+
+@media(max-width:1000px){
+
+.card-container{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+
+
+@media(max-width:700px){
+
+
+.header{
+
+flex-direction:column;
+gap:20px;
+
+}
+
+
+.top-right{
+
+flex-wrap:wrap;
+
+}
+
+
+.card-container{
+
+grid-template-columns:1fr;
+
+}
+
+
+.table-box{
+
+overflow-x:auto;
+
+}
+
+
+}
+/* ---------------------------------usereditpage--------------------------- */
+.edit-container{
+
+min-height:100vh;
+background:#f1f5f9;
+display:flex;
+justify-content:center;
+align-items:center;
+
+}
+
+
+.edit-card{
+
+width:450px;
+background:white;
+padding:30px;
+border-radius:20px;
+box-shadow:0 10px 30px #ccc;
+
+}
+
+
+.edit-card h2{
+
+text-align:center;
+color:#2563eb;
+
+}
+
+
+.edit-card input,
+.edit-card select{
+
+width:100%;
+padding:12px;
+margin:10px 0;
+border-radius:10px;
+border:1px solid #ddd;
+
+}
+
+
+.edit-card button{
+
+width:100%;
+padding:12px;
+background:#2563eb;
+color:white;
+border:none;
+border-radius:10px;
+cursor:pointer;
+
+}
+
+
+.edit-card button:hover{
+
+background:#1d4ed8;
+
+}

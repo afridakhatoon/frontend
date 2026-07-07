@@ -21,7 +21,6 @@ function Userlogin() {
   }
   const mylogin = () => {
     axios.post(`${baseurl}/userlogin`, login).then((r) => {
-      console.log(r)
       if (r.data.status === 210) {
         toast.warning(r.data.msg)
       }

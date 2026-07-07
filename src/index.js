@@ -1,6 +1,3 @@
-
-
-
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -16,7 +13,6 @@ import Userlogin from './modules/user/auth/Userlogin';
 import Userregistor from './modules/user/auth/Userregistor';
 import Welcome from './Welcome';
 import Masterpage from './modules/usercomponents/Masterpage';
-
 import Blankpage from './modules/user/layouts/Blankpage';
 import Userprofile from './modules/usercomponents/Userprofile';
 import Userlist from './modules/usercomponents/Userlist';
@@ -27,24 +23,6 @@ root.render(
   <React.StrictMode>
 
     <BrowserRouter>
-
-      {/* <Routes>
-        <Route
-          path="/userupdate/:id"
-          element={<Usereditpage />}/>
-        <Route path='userlist' element={<Userlist />}></Route>
-        <Route path='' element={<Welcome />}></Route>
-        <Route path='users' element={<Blankpage />}>
-          <Route path='' element={<Userlogin />}></Route>
-          <Route path='registor' element={<Userregistor />}></Route>
-          <Route path='dashboard' element={<Masterpage />}>
-            <Route path='' element={<Userprofile />}></Route>
-
-          </Route>
-        </Route>
-      </Routes>
-
- */}
 
 
       <Routes>

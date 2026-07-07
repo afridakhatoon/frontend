@@ -110,7 +110,6 @@
 .red{background:#F44336;}
 .cyan{background:#03A9F4;}
 .pink{background:#E91E63;}
-.info{background:#00BCD4;}
 .light{background:#90CAF9;}
 .sky{background:#29B6F6;}
 
@@ -439,12 +438,10 @@ td{
     color:#334155;
 }
 tbody tr:hover{
-
     background:#f8fafc;
 }
 /* BUTTONS */
 .edit-btn{
-
     background:#2563eb;
     color:white;
     border:none;
@@ -452,67 +449,48 @@ tbody tr:hover{
     border-radius:5px;
     cursor:pointer;
     margin-right:8px;
-
 }
-
 .edit-btn:hover{
-
     background:#1d4ed8;
-
 }
 .delete-btn{
-
     background:#dc2626;
     color:white;
     border:none;
     padding:8px 15px;
     border-radius:5px;
     cursor:pointer;
-
 }
 .delete-btn:hover{
-
     background:#b91c1c;
-
 }
-
 /* CARD VIEW */
 .card-container{
-
     display:grid;
     grid-template-columns:repeat(3,1fr);
     gap:25px;
-
 }
 .student-card{
-
     background:white;
     padding:25px;
     border-radius:15px;
     box-shadow:0 5px 20px rgba(0,0,0,.12);
     transition:.3s;
-
 }
 .student-card:hover{
-
     transform:translateY(-8px);
-
 }
 .student-card h3{
-
     text-align:center;
     color:#2563eb;
     margin-bottom:20px;
-
 }
 .info p{
-
     padding:8px 0;
     border-bottom:1px solid #eee;
     color:#334155;
 }
 .btn-group{
-
     margin-top:20px;
     text-align:center;
 }

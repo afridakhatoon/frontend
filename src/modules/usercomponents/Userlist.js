@@ -105,7 +105,7 @@ function Userlist() {
                 <tr key={item._id}>
 
                   <td>{item.FullName}</td>
-                  <td>{item.DOB}</td>
+<td>{new Date(item.DOB).toLocaleDateString()}</td>
                   <td>{item.Phone}</td>
                   <td>{item.Email}</td>
                   <td>••••••••</td>

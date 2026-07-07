@@ -2,6 +2,119 @@
   margin:0;
   padding:0;
 }
+/*----------------welcome---------------------------------------- */
+.dashboard-container{
+    width:100%;
+    min-height:100vh;
+    background:#eef4ff;
+    padding:25px;
+}
+
+/* Search */
+
+.search-box{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    margin-bottom:35px;
+}
+
+.search-box input{
+    width:55%;
+    height:48px;
+    border:none;
+    outline:none;
+    border-radius:10px;
+    padding-left:20px;
+    font-size:17px;
+    box-shadow:0 2px 8px rgba(0,0,0,.15);
+}
+
+/* Grid */
+
+.app-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+    gap:35px;
+    text-align:center;
+}
+
+/* Card */
+
+.app-card{
+    text-decoration:none;
+    color:#222;
+    transition:.3s;
+}
+
+.app-card:hover{
+    transform:translateY(-8px);
+}
+
+/* Icon Circle */
+
+.icon-circle{
+    width:90px;
+    height:90px;
+    border-radius:50%;
+    margin:auto;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
+
+.app-icon{
+    width:55px;
+    height:55px;
+    object-fit:contain;
+}
+
+.app-card h6{
+    margin-top:12px;
+    font-size:17px;
+    font-weight:500;
+}
+
+.icon-circle{
+    width:110px;
+    height:110px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin:auto;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+    transition:.3s;
+}
+
+.icon-circle:hover{
+    transform:scale(1.08);
+}
+
+.app-card h6{
+    margin-top:15px;
+    font-size:22px;
+    font-weight:500;
+}
+.app-grid{
+    display:grid;
+    grid-template-columns:repeat(6,1fr);
+    gap:50px;
+}
+.blue{background:#4A90E2;}
+.purple{background:#7E57C2;}
+.green{background:#4CAF50;}
+.yellow{background:#FBC02D;}
+.orange{background:#FF9800;}
+.red{background:#F44336;}
+.cyan{background:#03A9F4;}
+.pink{background:#E91E63;}
+.info{background:#00BCD4;}
+.light{background:#90CAF9;}
+.sky{background:#29B6F6;}
+
+
 
 .login-container{
   height:100vh;
@@ -253,8 +366,6 @@ flex-direction:column;
 flex-direction:column;
 }
 }
-
-
 /* ----------------------------userlist------------------------------------------------- */
 *{
     margin:0;
@@ -262,60 +373,33 @@ flex-direction:column;
     box-sizing:border-box;
     font-family:Arial, sans-serif;
 }
-
-
 .student-page{
-
     min-height:100vh;
     background:#f1f5f9;
     padding:30px;
-
 }
-
-
-
 .header{
-
     display:flex;
     justify-content:space-between;
     align-items:center;
     margin-bottom:25px;
-
 }
-
-
-
 .header h2{
-
     color:#1e293b;
     font-size:28px;
-
 }
-
-
-
 .top-right{
-
     display:flex;
     gap:12px;
     align-items:center;
-
 }
-
-
-
 .top-right input{
-
     width:260px;
     padding:10px 15px;
     border:1px solid #ccc;
     border-radius:6px;
     outline:none;
-
 }
-
-
-
 .top-right button{
 
     padding:10px 18px;
@@ -324,84 +408,41 @@ flex-direction:column;
     color:white;
     border-radius:6px;
     cursor:pointer;
-
 }
-
-
-
 .top-right button.active{
-
     background:#2563eb;
-
 }
-
-
-
-
 /* TABLE */
-
-
 .table-box{
 
     background:white;
     border-radius:10px;
     overflow:hidden;
     box-shadow:0 5px 20px rgba(0,0,0,.1);
-
 }
-
-
-
 table{
-
     width:100%;
     border-collapse:collapse;
-
 }
-
-
-
 thead{
-
     background:#07182e;
     color:white;
-
 }
-
-
-
 th{
-
     padding:15px;
     text-align:left;
     font-size:14px;
-
 }
-
-
-
 td{
-
     padding:14px;
     border-bottom:1px solid #e5e7eb;
     color:#334155;
-
 }
-
-
-
 tbody tr:hover{
 
     background:#f8fafc;
-
 }
-
-
-
-
 /* BUTTONS */
-
-
 .edit-btn{
 
     background:#2563eb;
@@ -414,16 +455,11 @@ tbody tr:hover{
 
 }
 
-
-
 .edit-btn:hover{
 
     background:#1d4ed8;
 
 }
-
-
-
 .delete-btn{
 
     background:#dc2626;
@@ -434,21 +470,13 @@ tbody tr:hover{
     cursor:pointer;
 
 }
-
-
-
 .delete-btn:hover{
 
     background:#b91c1c;
 
 }
 
-
-
-
 /* CARD VIEW */
-
-
 .card-container{
 
     display:grid;
@@ -456,9 +484,6 @@ tbody tr:hover{
     gap:25px;
 
 }
-
-
-
 .student-card{
 
     background:white;
@@ -468,17 +493,11 @@ tbody tr:hover{
     transition:.3s;
 
 }
-
-
-
 .student-card:hover{
 
     transform:translateY(-8px);
 
 }
-
-
-
 .student-card h3{
 
     text-align:center;
@@ -486,89 +505,46 @@ tbody tr:hover{
     margin-bottom:20px;
 
 }
-
-
-
 .info p{
 
     padding:8px 0;
     border-bottom:1px solid #eee;
     color:#334155;
-
 }
-
-
-
 .btn-group{
 
     margin-top:20px;
     text-align:center;
-
 }
-
-
-
-
 /* RESPONSIVE */
-
-
 @media(max-width:1000px){
-
 .card-container{
-
 grid-template-columns:repeat(2,1fr);
-
 }
-
 }
-
-
-
 @media(max-width:700px){
-
-
 .header{
-
 flex-direction:column;
 gap:20px;
-
 }
-
-
 .top-right{
-
 flex-wrap:wrap;
-
 }
-
-
 .card-container{
-
 grid-template-columns:1fr;
-
 }
-
-
 .table-box{
-
 overflow-x:auto;
-
 }
-
-
 }
 /* ---------------------------------usereditpage--------------------------- */
 .edit-container{
-
 min-height:100vh;
 background:#f1f5f9;
 display:flex;
 justify-content:center;
 align-items:center;
-
 }
-
-
 .edit-card{
 
 width:450px;
@@ -576,18 +552,11 @@ background:white;
 padding:30px;
 border-radius:20px;
 box-shadow:0 10px 30px #ccc;
-
 }
-
-
 .edit-card h2{
-
 text-align:center;
 color:#2563eb;
-
 }
-
-
 .edit-card input,
 .edit-card select{
 
@@ -596,12 +565,8 @@ padding:12px;
 margin:10px 0;
 border-radius:10px;
 border:1px solid #ddd;
-
 }
-
-
 .edit-card button{
-
 width:100%;
 padding:12px;
 background:#2563eb;
@@ -609,12 +574,7 @@ color:white;
 border:none;
 border-radius:10px;
 cursor:pointer;
-
 }
-
-
 .edit-card button:hover{
-
 background:#1d4ed8;
-
 }

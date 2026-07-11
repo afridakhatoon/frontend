@@ -10,7 +10,7 @@ function Userregistor() {
   const mynav = useNavigate()
   const { register, handleSubmit, formState: { errors } } = useForm()
   const mysubmit = (e) => {
-    axios.post(`${baseurl}/userregistor`, e).then((r) => {
+    axios.post(`${baseurl}/userregistor`, e,{withCredentials:true}).then((r) => {
       if (r.data.status === 230) {
         toast.warning(r.data.msg, { autoClose: 2000, theme: "dark", position: 'top-left' });
       }

@@ -26,7 +26,7 @@ function Userlist() {
 
   const deleteUser = (id) => {
     if (window.confirm("Do you want to delete this user?")) {
-      axios.delete(`${baseurl}/userdelete/${id}`).then(() => {
+      axios.delete(`${baseurl}/userdelete/${id}`,{withCredentials:true}).then(() => {
         alert("User Deleted Successfully");
         getUsers();
       });

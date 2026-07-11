@@ -21,7 +21,7 @@ useEffect(()=>{
 getSingleUser();
 },[])
 const getSingleUser = ()=>{
-axios.get(`${baseurl}/singledata/${id}`)
+axios.get(`${baseurl}/singledata/${id}`,{withCredentials:true})
 .then((res)=>{
 console.log(res.data.user);
 setUser(res.data.user);

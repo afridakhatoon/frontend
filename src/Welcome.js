@@ -9,7 +9,7 @@ function Welcome() {
     const [myapp, updateapp] = useState([]);
 
     useEffect(() => {
-        axios.get(`${baseurl}/addlist`).then((res) => {
+        axios.get(`${baseurl}/addlist`,{withCredentials:true}).then((res) => {
             updateapp(res.data.addlist);
         });
     }, []);

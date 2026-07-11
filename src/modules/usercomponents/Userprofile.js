@@ -26,7 +26,7 @@ function Userprofile() {
 
         const Email = sessionStorage.getItem("currentuser");
 
-        axios.post(`${baseurl}/singleuser`, { Email })
+        axios.post(`${baseurl}/singleuser`, { Email },{withCredentials:true})
             .then((r) => {
 
                 console.log(r.data.userlist);
